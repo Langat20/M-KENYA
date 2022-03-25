@@ -1,0 +1,1597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hero-section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://images.pexels.com/photos/1586663/pexels-photo-1586663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: center;
+}
+.hero-section .na-v .navbar{
+    box-shadow: 0px 0px 10px, 0px 0px 10px;
+}
+.container-fluid img{
+    width: 40px;
+}
+.logo img{
+    margin-left: 15px;
+}
+.logo h5{
+    color: #FA5F1A;
+    font-family: 'Creepster', cursive;
+    font-size: 25px;
+}
+.na-v nav .container-fluid #nav-bar{
+    display: flex;
+    margin-right: 5%;
+}
+.na-v nav .container-fluid #nav-bar p{
+    margin: 20px;
+    font-family: 'Chicle', cursive;
+    font-size: 35px;
+    color: #FA5F1A;
+}
+.description{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20%;
+}
+.hero-section .description-logo img{
+    width: 200px;
+    margin-left: 33%;
+}
+.hero-section .description-logo P{
+    text-align: center;
+    color: white;
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 60px;
+    margin-left: 0px;
+}
+.about{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.about #explanation{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 40%;
+    height: 50%;
+}
+.about #explanation p{
+    width: 50%;
+    padding-top: 20%;
+    text-align: center;
+    font-family: 'Sirin Stencil', cursive;
+}
+.about #explanation #quote{
+    font-size: 30px;
+}
+.about #explanation #quote-mark{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 50px;
+    height: 50px;
+}
+.about #explanation .hidden{
+    display: none;
+}
+.about #explanation p span{
+    color: #FA5F1A;
+}
+.about .images img{
+    width: 200px;
+    height: 200px;
+    border-radius: 250px;
+}
+.about .images #man1{
+    margin-left: 10px;
+}
+.about .images #man2{
+    position: absolute;
+    top: 78%;
+    left: 40%;
+}
+.about .images #girl1{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+}
+.about .images #girl2{
+    position: absolute;
+    top: 15%;
+    left: 36%;
+}
+.founders{
+    position: absolute;
+    top: 5%;
+}
+.founders h1{
+    font-family: 'Sirin Stencil', cursive;
+    font-size: 50px;
+}
+.learn-more img{
+    width: 100px;
+    position: absolute;
+    top: 90%;
+    left: 85%;
+}
+.art-showcase{
+    height: 50vh;
+    position: relative;
+    background-image: url(https://cdn.artstation.com/assets/community/home/bg-prints.jpg);
+}
+.slide-ft{
+    /* height: 50vh;
+    background-image: url(https://cdn.artstation.com/assets/community/home/bg-prints.jpg); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.slide-ft .slider{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+
+}
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+.slide-ft .slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+.slide-ft .slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+.slide-ft .slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+}
+.art-work {
+    color: white;
+    font-family: 'Sirin Stencil', cursive;
+}
+.art-work .our-logo{
+    display: flex;
+}
+.art-work .our-logo h6{
+    padding-top: 30px;
+    margin-left: 5px;
+    color: white;
+    font-family: 'Creepster', cursive;
+}
+.art-work .our-logo h6 span{
+    color: #FA5F1A;
+}
+.art-showcase .art-work img{
+    width: 30px;
+}
+.view-more {
+    position: absolute;
+    left: 90%;
+}
+.view-more a i{
+    font-size: 40px;
+    margin-left: 10px;
+}
+.view-more h6{
+    color: white;
+    font-family: 'Sirin Stencil', cursive;
+}
+.upcoming-event{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(https://cdn.wallpapersafari.com/75/82/YJyXDz.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.upcoming-event h1{
+    text-align: center;
+    font-family: 'Sirin Stencil', cursive;
+    color: #FA5F1A;
+    padding-top: 6%;
+}
+.carousel{
+    width: 80%;
+    margin-left: 10%;
+}
+.carousel div img{
+    height: 500px;
+}
+.carousel .carousel-caption{
+    color: #FA5F1A;
+    font-family: 'Sirin Stencil', cursive;
+}
+.carousel .carousel-caption h5{
+    font-size: 60px;
+}
+.carousel .carousel-caption p{
+    font-size: 30px;
+}
+.upcoming-event h2{
+    text-align: center;
+    font-family: 'Sirin Stencil', cursive;
+    color: white;
+    padding-top: 4%;
+}
+.upcoming-event h3{
+    text-align: center;
+    font-family: 'Sirin Stencil', cursive;
+    color: white;
+    font-size: 25px;
+}
+.booking {
+    position: relative;
+}
+.booking img{
+    width: 50px;
+    position: absolute;
+    left: 60%;
+    top: 40%;
+}
+.view-event{
+    position: absolute;
+    left: 90%;
+}
+.view-event a i{
+    font-size: 40px;
+    margin-left: 30%;
+}
+.view-event h5{
+    color: black;
+    font-family: 'Sirin Stencil', cursive;
+}
+.gallery{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.position{
+    height: 70vh;
+    width: 80%;
+    position: relative;
+}
+#participate{
+    width: 95%;
+    height: 32vh;
+    position: relative;
+    margin-left: 2.5%;
+    background-image: url(https://theknowledgeexchangeblog.files.wordpress.com/2014/10/artists-paint-pallete.jpg);
+    background-size: cover;
+}
+#participate h2{
+    padding-top: 7%;
+}
+#participate div{
+    height: 12%;
+    width: 15%;
+    border: 2px solid white;
+    position: absolute;
+    left: 42%;
+    border-radius: 25px;
+    background-color: rgba(200, 100, 3, 0.01);
+}
+#participate div p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Sirin Stencil', cursive;
+}
+#participate .align{
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Sirin Stencil', cursive;
+}
+.closure{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    position: relative;
+}
+#community{
+    width: 50%;
+    height: 32vh;
+    margin: 10px;
+    position: relative;
+    background-image: url(https://wp.dailybruin.com/images/2020/06/picb.web_.gradissue.ae_.artistcontributions.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#community h2{
+    padding-top: 15%;
+}
+#community div{
+    height: 12%;
+    width: 27%;
+    border: 2px solid white;
+    position: absolute;
+    left: 35%;
+    border-radius: 25px;
+    background-color: rgba(200, 100, 3, 0.01);
+}
+#community div p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Sirin Stencil', cursive;
+}
+#community .align{
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Sirin Stencil', cursive;
+}
+#exhibition{
+    width: 50%;
+    height: 32vh;
+    position: relative;
+    margin: 10px;
+    background-image: url(https://www.wondriumdaily.com/wp-content/uploads/2020/03/Sneferu-The-Pyramid-Builder_The-History-of-Ancient-Egypt_QBS_Feature_Image_A_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#exhibition h2{
+    padding-top: 15%;
+}
+#exhibition div{
+    height: 12%;
+    width: 27%;
+    border: 2px solid white;
+    position: absolute;
+    left: 35%;
+    border-radius: 25px;
+    background-color: rgba(200, 100, 3, 0.01);
+}
+#exhibition div p{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: 'Sirin Stencil', cursive;
+}
+#exhibition .align{
+    text-align: center;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Sirin Stencil', cursive;
+}
+.footer{
+    position: relative;
+    min-height: 300px;
+    background-color: #171717;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-logo h6{
+    color: #FA5F1A;
+    font-family: 'Creepster', cursive;
+    font-size: 25px;
+}
+.footer ul li{
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+}
+.footer ul h3{
+    font-size: 17px;
+    color: white;
+}
+.footer div img{
+    width: 30%;
+    cursor: pointer;
+}
+.footer ul li:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 115, 33);
+}
+.footer .footer-logo img{
+    width: 50px;
+}
+.footer .newsletter{
+    width: 370px;
+    position: relative;
+}
+.footer .newsletter h3{
+    font-size: 17px; 
+    color: white;   
+}
+.footer .newsletter p{
+    font-size: 15px; 
+    color: rgb(88, 82, 82);   
+}
+.footer .newsletter input{
+    width: 350px;
+    height: 40px;   
+    background-color: black;
+    border: 1px solid white; 
+    color: white;
+    position: relative;
+}
+.footer .newsletter input:focus{
+    border: none;
+    outline: 2px solid #FA5F1A; 
+}
+.footer-line{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: rgb(88, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-line p{
+    cursor: pointer;
+    margin: 5px;
+}
+.footer-line p:hover{
+    color: #FA5F1A;
+}
+.footer .newsletter .subscribe{
+    position: relative;
+}
+.footer .newsletter h4{
+    position: absolute;
+    top: 20%;
+    left: 69%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FA5F1A;
+}
+
+/* contact us */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sirin Stencil", cursive;
+  } */
+  .box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .box .cont {
+    height: 80vh;
+    width: 65%;
+  }
+  .cont img {
+    height: 70vh;
+    margin: 20px;
+    border-radius: 10px;
+  }
+  .cont input .textarea::placeholder {
+    color: black;
+    font-size: 20px;
+  }
+  .cont p {
+    font-size: 28px;
+  }
+  .name input {
+    width: 600px;
+    height: 60px;
+    margin-bottom: 1%;
+    color: black;
+    border: 1px solid #FA5F1A;
+  }
+  .email input::placeholder {
+    color: black;
+    font-size: 20px;
+  }
+  .name input::placeholder {
+    color: black;
+    font-size: 20px;
+  }
+  .email input :focus {
+    outline: 2px solid red;
+    border: none;
+  }
+  .email input {
+    width: 298px;
+    height: 60px;
+    margin-bottom: 1%;
+    color: black;
+    border: 1px solid #FA5F1A;
+  }
+  .textarea {
+    width: 600px;
+    height: 200px;
+    margin-bottom: 1%;
+    color: black;
+    border: 1px solid #FA5F1A;
+  }
+  .submit button {
+    height: 40px;
+    width: 180px;
+    border-radius: 5px;
+    margin-left: 36%;
+    background-color: black;
+    color: white;
+  }
+  .contact {
+    text-align: center;
+  }
+  .contact h1 {
+    margin-bottom: 20px;
+    color: #FA5F1A;
+  }
+  .contact p {
+    margin-bottom: 20px;
+    color: #FA5F1A;
+  }
+  .na-v .navbar {
+    box-shadow: 0px 0px 10px, 0px 0px 10px;
+  }
+  .container-fluid img {
+    width: 40px;
+  }
+  .logo img {
+    margin-left: 15px;
+  }
+  .logo h5 {
+    color: #FA5F1A;
+    font-family: "Creepster", cursive;
+    font-size: 25px;
+  }
+  .na-v nav .container-fluid #nav-bar {
+    display: flex;
+    margin-right: 5%;
+  }
+  .na-v nav .container-fluid #nav-bar p {
+    margin: 20px;
+    font-family: "Chicle", cursive;
+    font-size: 35px;
+    color: #FA5F1A;
+  }
+  .footer {
+    position: relative;
+    min-height: 300px;
+    background-color: #171717;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer .footer-logo h6 {
+    color: #FA5F1A;
+    font-family: "Creepster", cursive;
+    font-size: 25px;
+  }
+  .footer ul li {
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+  }
+  .footer ul h3 {
+    font-size: 17px;
+    color: white;
+  }
+  .footer div img {
+    width: 30%;
+    cursor: pointer;
+  }
+  .footer ul li:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 115, 33);
+  }
+  .footer .footer-logo img {
+    width: 50px;
+  }
+  .footer .newsletter {
+    width: 370px;
+    position: relative;
+  }
+  .footer .newsletter h3 {
+    font-size: 17px;
+    color: white;
+  }
+  .footer .newsletter p {
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+  }
+  .footer .newsletter input {
+    width: 350px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+  }
+  .footer .newsletter input:focus {
+    border: none;
+    outline: 2px solid #FA5F1A;
+  }
+  .footer-line {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: rgb(88, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-line p {
+    cursor: pointer;
+    margin: 5px;
+  }
+  .footer-line p:hover {
+    color: #FA5F1A;
+  }
+  .footer .newsletter .subscribe {
+    position: relative;
+  }
+  .footer .newsletter h4 {
+    position: absolute;
+    top: 20%;
+    left: 69%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FA5F1A;
+  }
+
+  /* bid page */
+
+  * {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  body {
+    color: white;
+    font-family: "Sirin stencil", cursive;
+  }
+  h1 {
+    font-size: 2.5rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+  }
+  h2 {
+    font-size: 8rem;
+    font-family: "Lobster", sans-serif;
+    font-weight: lighter;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  li {
+    font-size: 2rem;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  .home {
+    background: radial-gradient(#525252, #131313);
+  }
+  .showcase {
+    display: -ms-grid;
+    display: grid;
+    min-height: 90vh;
+    -ms-grid-columns: 10% (minmax(6rem, 1.5fr)) 3 10%;
+        grid-template-columns: 10% repeat(3, minmax(6rem, 1.5fr)) 10%;
+    -ms-grid-rows: 1fr 2fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+  }
+  .showcase h2 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .showcase img {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .showcase .info {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3/5;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  .showcase .info p{
+      color: white;
+  }
+  .showcase .info h3 {
+    padding-bottom: 3rem;
+    color: white;
+    font-size: 30px;
+  }
+  .features-container {
+    background: #323232;
+  }
+  .features {
+    min-height: 60vh;
+    width: 50%;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .features h2 {
+    padding: 24px;
+    font-weight: 500;
+    font-family: sans-serif;
+    color: darkorange;
+  }
+  .features .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    color: black;
+    height: auto;
+    width: auto;
+  }
+  .features .cards .card {
+    background: initial;
+    margin: 0rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    border-radius: 2rem;
+    overflow: hidden;
+    all: initial;
+  }
+  .features .cards .card h4 {
+    -ms-flex-item-align: end;
+    align-self: flex-end;
+    color: white;
+
+  }
+  .features .cards .card p {
+    padding: 2rem;
+    color: white;
+    font-family: "Sirin stencil", cursive;
+    font-size: 2.5rem;
+  }
+  .features .cards .card img {
+    -o-object-fit: scale-down;
+       object-fit: scale-down;
+}
+
+/* gallery page */
+
+/* nav bar */
+
+.hero-section .na-v .navbar {
+    box-shadow: 0px 0px 10px, 0px 0px 10px;
+  }
+  .container-fluid img {
+    width: 40px;
+  }
+  .logo img {
+    margin-left: 15px;
+  }
+  .logo h5 {
+    color: #fa5f1a;
+    font-family: "Creepster", cursive;
+    font-size: 25px;
+  }
+  .na-v nav .container-fluid #nav-bar {
+    display: flex;
+    margin-right: 5%;
+  }
+  .na-v nav .container-fluid #nav-bar p {
+    margin: 20px;
+    font-family: "Chicle", cursive;
+    font-size: 30px;
+    color: #FA5F1A;
+  }
+  
+  /* navbar styling end */
+  /* parallax scroll effect */
+  
+  img {
+    vertical-align: middle;
+    max-width: 100%;
+  }
+  
+  main {
+    padding: 1em 0;
+    position: relative;
+    background-color: transparent;
+    box-shadow: opx -10px 60px rgba(0, 0, 0, 0.25);
+    height: 200vh;
+  }
+  
+  .header {
+    overflow: hidden;
+    padding-bottom: 55%;
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+  }
+  
+  .heroimg {
+    width: 100%;
+    height: 100vh;
+    max-width: none;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: url("img/hero.jpg");
+    background-position: center;
+    background-size: contain;
+  }
+  
+  .herotext {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    font-size: 2em;
+    z-index: 1;
+  }
+  
+  .herotext h1 {
+    font-size: 180px;
+    font-weight: bolder;
+    line-height: 100px;
+    margin-bottom: 30px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url("img/back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: gallery 20s linear infinite;
+  }
+  
+  @keyframes gallery {
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+  
+  /* parallax scroll effect end */
+  
+  /* gallery section */
+  
+  .contained {
+    margin: 0 auto;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 8px;
+    height: 90vh;
+    background-color: transparent;
+  }
+  
+  .art1 {
+    background-color: white;
+    z-index: 1;
+    position: absolute;
+  }
+  
+  .artist1 {
+    width: 35%;
+    height: 100%;
+    background-color: transparent;
+    color: #fa5f1a;
+  }
+  
+  .artist-self1 {
+    width: 65%;
+    height: 100%;
+    background-image: url("img/artist1.jpg");
+    background-size: contain;
+    background-position: center center;
+  }
+  
+  #hidecont {
+    display: none;
+  }
+  
+  #hidecont1 {
+    display: none;
+  }
+  
+  .artist-self2 {
+    width: 65%;
+    height: 100%;
+    background-image: url("img/artist2.jpg");
+    background-size: contain;
+    background-position: center;
+  }
+  
+  @import url("https://fonts.googleapis.com/css2?family=Sirin+Stencil&display=swap");
+  * {
+    padding: 0;
+    margin: 0;
+    font-family: "Sirin Stencil", cursive;
+    box-sizing: border-box;
+  }
+  body {
+    background-color: black;
+    font-family: "Sirin Stencil", cursive;
+  }
+  /* .gallery {
+    margin: 16px; */
+  
+  .gallery-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100%;
+  }
+  .card-container {
+    width: 40%;
+    background-color: transparent;
+    border-radius: 10px 0px 0px 10px;
+    overflow: hidden;
+    position: relative;
+  }
+  #container2 {
+    margin-left: 1%;
+  }
+  .card-gallery {
+    width: 70%;
+    margin: 20px;
+    height: 100%;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    position: relative;
+  }
+  .card-gallery i {
+    color: white;
+    position: absolute;
+    top: 90%;
+    font-size: 30px;
+    left: 5%;
+    cursor: pointer;
+    z-index: 20;
+  }
+  .card-image {
+    width: 100%;
+  }
+  .card-gallery img {
+    margin: 2%;
+    margin-left: 5%;
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+  }
+  .card-caption {
+    padding: 20px;
+  }
+  .card-button {
+    border: 1px solid white;
+    outline: none;
+  
+    width: 150px;
+    color: white;
+    border-radius: 30px;
+    margin: 40px;
+  
+    cursor: pointer;
+    font-size: 18px;
+    height: 6%;
+    background-color: transparent;
+    font-weight: 600;
+  }
+  .card-mouseon {
+    border: 1px solid white;
+    outline: none;
+  
+    width: 150px;
+    height: 6%;
+    color: white;
+    border-radius: 30px;
+    margin: 40px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: transparent;
+    font-weight: 600;
+  }
+  .card-mygallery {
+    width: 70%;
+    margin: 20px;
+    display: flex;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: black;
+    position: relative;
+  }
+  .card-mygallery i {
+    color: white;
+    position: absolute;
+    top: 90%;
+    font-size: 30px;
+    left: 5%;
+    cursor: pointer;
+  }
+  .card-mygallery img {
+    margin: 2%;
+    margin-left: 5%;
+    border-radius: 4px;
+    width: 200px;
+    height: 200px;
+  }
+  .card-images {
+    width: 100%;
+  }
+  .gallery-title {
+    text-align: center;
+    padding: 15px;
+    font-size: larger;
+    background-color: black;
+    color: white;
+  }
+  
+  .gallery-container .card-test {
+    width: 60%;
+  
+    background-image: url("img/artist3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .gallery-container .card-test2 {
+    width: 58%;
+  
+    background-image: url("img/artist4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .card-title {
+    color: #fa5f1a;
+  }
+  
+  .card-text {
+    color: #fff;
+  }
+  
+  /* footer section */
+  
+  .footer {
+    position: relative;
+    min-height: 300px;
+    background-color: #171717;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .footer .footer-logo h6 {
+    color: #fa5f1a;
+    font-family: "Creepster", cursive;
+    font-size: 25px;
+  }
+  .footer ul li {
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+  }
+  .footer ul h3 {
+    font-size: 17px;
+    color: white;
+  }
+  .footer div img {
+    width: 30%;
+    cursor: pointer;
+  }
+  .footer ul li:hover {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 115, 33);
+  }
+  .footer .footer-logo img {
+    width: 50px;
+  }
+  .footer .newsletter {
+    width: 370px;
+    position: relative;
+  }
+  .footer .newsletter h3 {
+    font-size: 17px;
+    color: white;
+  }
+  .footer .newsletter p {
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+  }
+  .footer .newsletter input {
+    width: 350px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+  }
+  .footer .newsletter input:focus {
+    border: none;
+    outline: 2px solid #fa5f1a;
+  }
+  
+  .footer-line p {
+    cursor: pointer;
+    margin: 5px;
+    color: #fff;
+  }
+  .footer-line p:hover {
+    color: #fa5f1a;
+  }
+  .footer .newsletter .subscribe {
+    position: relative;
+  }
+  .footer .newsletter h4 {
+    position: absolute;
+    top: 20%;
+    left: 69%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: #fa5f1a;
+  }
+  
+  .footer-line {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* event page */
+
+  .container-row{
+    display: grid;
+    padding-top: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    grid-template-columns: 60% 40% ;
+    grid-column-gap: 1em;
+    padding-bottom: 2%;
+}
+.img-source{
+    border-radius: 3%;
+    padding-top: 10%;
+    padding-left: 4%;
+}
+.texts-source {
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20%;
+    padding-right: 20%;
+    color: white;
+    font-size:1vw;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+.texts-source h1{
+    color: #FA5F1A;
+}
+.texts-source2 h1{
+    color: #FA5F1A;
+}
+.container-second{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+.img-source2{
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    border-radius: 4%;
+    padding-right: 0%;
+}
+.texts-source2{
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20%;
+    color: white;
+    padding-left: 20%;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+}
+.hero-section .na-v .navbar{
+    box-shadow: 0px 0px 10px, 0px 0px 10px;
+}
+.container-fluid img{
+    width: 40px;
+}
+.logo img{
+    margin-left: 15px;
+}
+.logo h5{
+    color: #FA5F1A;
+    font-family: 'Creepster', cursive;
+    font-size: 25px;
+}
+.na-v nav .container-fluid #nav-bar{
+    display: flex;
+    margin-right: 5%;
+}
+.na-v nav .container-fluid #nav-bar p{
+    margin: 20px;
+    font-family: 'Chicle', cursive;
+    font-size: 35px;
+    color: #FA5F1A;
+}
+.footer{
+    position: relative;
+    min-height: 300px;
+    background-color: #171717;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-logo h6{
+    color: #FA5F1A;
+    font-family: 'Creepster', cursive;
+    font-size: 25px;
+}
+.footer ul li{
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+}
+.footer ul h3{
+    font-size: 17px;
+    color: white;
+}
+.footer div img{
+    width: 30%;
+    cursor: pointer;
+}
+.footer ul li:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 115, 33);
+}
+.footer .footer-logo img{
+    width: 50px;
+}
+.footer .newsletter{
+    width: 370px;
+    position: relative;
+}
+.footer .newsletter h3{
+    font-size: 17px;
+    color: white;
+}
+.footer .newsletter p{
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+}
+.footer .newsletter input{
+    width: 350px;
+    height: 40px;
+    background-color: black;
+    border: 1px solid white;
+    color: white;
+    position: relative;
+}
+.footer .newsletter input:focus{
+    border: none;
+    outline: 2px solid #FA5F1A;
+}
+.footer-line{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: rgb(88, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-line p{
+    cursor: pointer;
+    margin: 5px;
+}
+.footer-line p:hover{
+    color: #FA5F1A;
+}
+.footer .newsletter .subscribe{
+    position: relative;
+}
+.footer .newsletter h4{
+    position: absolute;
+    top: 20%;
+    left: 69%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FA5F1A;
+}
+
+/* about page */
+
+:root{
+    --main-color:#d3ad7f;
+    --black:#13131a;
+    --bg:#010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+
+na-v .navbar {
+  box-shadow: 0px 0px 10px, 0px 0px 10px;
+}
+.container-fluid img {
+  width: 40px;
+}
+.logo img {
+  margin-left: 15px;
+}
+.logo h5 {
+  color: #fa5f1a;
+  font-family: "Creepster", cursive;
+  font-size: 25px;
+}
+.na-v nav .container-fluid #nav-bar {
+  display: flex;
+  margin-right: 5%;
+}
+.na-v nav .container-fluid #nav-bar p {
+  margin: 20px;
+  font-family: "Chicle", cursive;
+  font-size: 35px;
+  color: #fa5f1a;
+}
+iuy-szac-xuf
+
+
+/* *{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}*/
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+.about #about,.image{
+    object-position: bottom;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 7%;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 45rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+
+.footer{
+    position: relative;
+    min-height: 300px;
+    background-color: #171717;
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer .footer-logo h6{
+    color: #FA5F1A;
+    font-family: 'Creepster', cursive;
+    font-size: 25px;
+}
+.footer ul li{
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(88, 82, 82);
+}
+.footer ul h3{
+    font-size: 17px;
+    color: white;
+}
+.footer div img{
+    width: 30%;
+    cursor: pointer;
+}
+.footer ul li:hover{
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: rgb(240, 115, 33);
+}
+.footer .footer-logo img{
+    width: 50px;
+}
+.footer .newsletter{
+    width: 370px;
+    position: relative;
+}
+.footer .newsletter h3{
+    font-size: 17px; 
+    color: white;   
+}
+.footer .newsletter p{
+    font-size: 15px; 
+    color: rgb(88, 82, 82);   
+}
+.footer .newsletter input{
+    width: 350px;
+    height: 40px;   
+    background-color: black;
+    border: 1px solid white; 
+    color: white;
+    position: relative;
+}
+.footer .newsletter input:focus{
+    border: none;
+    outline: 2px solid #FA5F1A; 
+}
+.footer-line{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    text-align: center;
+    color: rgb(88, 82, 82);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-line p{
+    cursor: pointer;
+    margin: 5px;
+}
+.footer-line p:hover{
+    color: #FA5F1A;
+}
+.footer .newsletter .subscribe{
+    position: relative;
+}
+.footer .newsletter h4{
+    position: absolute;
+    top: 20%;
+    left: 69%;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    color: #FA5F1A;
+}
